@@ -1,0 +1,484 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Voice
+@import 'voice';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.vue-grid-layout {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.vue-grid-layout::-webkit-scrollbar{
+    width:5px;
+}
+
+.vue-grid-layout::-webkit-scrollbar-thumb{
+    border-width: 1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #c9c8c8;
+    border-radius: 10px;
+}
+
+.vue-grid-layout::-webkit-scrollbar-track{
+    border-width:0;
+}
+
+
+.application--wrap {
+    background: radial-gradient(#169298, #00496d);
+}
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.app-aside .v-list > div:hover {
+    background: #2b383f !important;
+    cursor: pointer;
+}
+
+
+.v-rating .v-icon {
+    padding: .1rem !important;
+}
+.upload-btn {
+    margin: 0 !important;
+}
+.v-toolbar__content {
+    padding-left: 15px !important;
+    padding-right: 0px !important;
+}
+.v-tabs__container {
+    justify-content: space-around;
+}
+#V1-Messenger {
+    background: radial-gradient(rgb(22, 146, 152), rgb(14, 118, 135));
+}
+#V1-Messenger .v-window {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#V1-Messenger .v-window__container {
+    height: 100%;
+}
+#V1-Messenger .v-window__container > div {
+    height: 100%;
+}
+.emoji-picker-container {
+    width: 100% !important;
+}
+.emoji-wysiwyg-editor .emoji-vue-textarea {
+    width: 100% !important;
+    border-radius: 30px !important;
+}
+.emoji-picker-icon {
+    left: 13px !important;
+    top: 13px !important;
+}
+.emoji-wysiwyg-editor {
+    border-radius: 30px !important;
+    padding-right: 50px !important;
+    padding-left: 45px !important;
+    padding-top: 15px !important;
+    color: white;
+    text-align: left;
+    font-size: 17px;
+    width: 100% !important;
+    border: none !important;
+}
+.emoji-wysiwyg-editor.emoji-vue-textarea:focus {
+    outline: none !important;
+}
+#v-one-messenger .search-wrap .v-input__prepend-inner, #v-one-messenger .search-wrap .v-input__prepend-inner {
+    margin-left: 4px;
+    margin-top: 8px;
+}
+#v-one-messenger .v-tabs__item:hover {
+    color: #fff !important;
+}
+.highlighted {
+    color: #f94f50;
+}
+#search-block #autocomplete .v-text-field .v-text-field__details {
+    display: none !important;
+}
+#search-block #autocomplete .v-text-field .v-input__control {
+    min-height: 40px !important;
+}
+#search-block #autocomplete .v-text-field .v-input__slot {
+    margin: 0 !important;
+}
+#add-transport-form .v-breadcrumbs * {
+    color: #128a93 !important;
+}
+#add-transport-form .datepicker {
+    padding-top: 5px;
+    height: 100%;
+    color: #888888;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #128a93 !important;
+}
+#add-transport-form .datepicker > div > input {
+    border: 0;
+    font-size: 13px;
+    color: #888888;
+}
+#add-transport-form .datepicker > div > input:focus {
+    outline: none;
+}
+.vdp-datepicker__calendar {
+    position: absolute;
+    margin-top: 2px;
+    z-index: 100;
+    background: #fff;
+    width: 240px;
+    border: 1px solid #ccc;
+}
+.vdp-datepicker__calendar .cell {
+    display: inline-block;
+    padding: 0 5px;
+    width: 14.285714285714286%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+}
+.v-input.m-0.p-0.cars-options.v-text-field.v-select.theme--light label {
+    font-size: 13px;
+    color: black;
+    margin-bottom: 0;
+}
+.input-small label {
+    font-size: 13px;
+    color: black !important;
+    margin-bottom: 0;
+}
+/* form starting stylings ------------------------------- */
+.m-design-input {
+    position: relative;
+}
+.m-design-input > input {
+    width: 100%;
+    border-radius: 0;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #128a93;
+    padding: 0 !important;
+    margin-top: 7px;
+}
+.m-design-input > input:focus {
+    outline: none;
+}
+/* LABEL ======================================= */
+.m-design-input > label {
+    color: #000000;
+    font-size: 13px;
+    position: absolute;
+    pointer-events: none;
+    left: 17px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+/* active state */
+.m-design-input > input:focus ~ label, input:valid ~ label {
+    top: -12px;
+    font-size: 12px;
+    color: red;
+}
+/* BOTTOM BARS ================================= */
+.m-design-input > .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.m-design-input > .bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: red;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.m-design-input > .bar:before {
+    left: 50%;
+}
+.m-design-input > .bar:after {
+    right: 50%;
+}
+/* active state */
+.m-design-input > input:focus ~ .bar:before,
+.m-design-input > input:focus ~ .bar:after {
+    width: 50%;
+}
+#add-transport-form .theme--light.v-icon {
+    color: rgb(18, 138, 147) !important;
+}
+.theme--light.v-text-field>.v-input__control>.v-input__slot:before {
+    border-color: rgb(106, 162, 173) !important;
+}
+.payment-method .v-label {
+    margin: 0px !important;
+    font-size: 13px;
+    color: #000 !important;
+}
+.payment-method .v-input--selection-controls__input {
+    height: 18px;
+    width: 18px;
+}
+.payment-method .v-input--selection-controls__input .v-icon {
+    font-size: 18px !important;
+}
+.my-color {
+    color: #128a93 !important;
+}
+#add-transport-form  .v-textarea textarea {
+    border: 1px solid #6aa2ad;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+#add-transport-form  .v-textarea .v-input__slot:before {
+    border: none !important;
+}
+#add-transport-form  .v-select__selections {
+    font-size: 14px !important;
+}
+#add-transport-form  .v-autocomplete input {
+    font-size: 14px !important;
+}
+.input-routes .v-input__slot {
+    margin-bottom: 0 !important;
+}
+li.v-breadcrumbs__divider {
+    padding: 0 5px !important;
+}
+#addStageForm .vc-swatches {
+    width: 100% !important;
+    height: 150px !important;
+}
+.item-wrap .v-select {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 190px;
+}
+.item-wrap .v-select .v-input__slot, .item-wrap .v-select .v-input__append-inner {
+    margin: 0 !important;
+}
+.item-wrap .v-select .v-label, .v-select__selection.v-select__selection--comma {
+    font-size: 14px;
+    color: #128d95;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.item-wrap .v-select .v-select__selections input {
+    padding: 0;
+}
+.item-wrap .v-select .v-text-field__details {
+    display: none;
+}
+.item-wrap .v-select .v-input__slot:before {
+    border-color: #fe2203 !important;
+    border-width: 1px !important;
+}
+.desc-p-two p {
+    margin-bottom: 0;
+}
+
+.message-file-menu {
+    position: absolute !important;
+    bottom: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid white !important;
+    right: 0px !important;
+    width: 90px !important;
+    height: 90px !important;
+    top: -20px !important;
+    display: flex !important;
+    padding-left: 10px !important;
+    background: #0b3f56 !important;
+}
+
+.message-file-menu .v-btn__content {
+    justify-content: flex-start !important;
+}
+
+
+.sortable-ghost {
+    opacity: 1 !important;
+}
+
+#search-block #autocomplete .v-input, #search-block #autocomplete .v-input__control {
+    height: 100% !important;
+}
+
+.bookmarks > i {
+    cursor: pointer;
+}
+.description p.text-truncate {
+    width: 167px;
+}
+.text-truncate > p {
+    margin: 0;
+}
+
+li {
+    display: block;
+}
+
+.f-11 {
+    font-size: 11px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.card-temp {
+    background: #e4f3f7;
+    color: #6c6c6c;
+    border: 1px solid #0eadbe;
+    border-radius: 3px;
+}
+.card-temp > div {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-header {
+    height: 35px;
+}
+.card-header .title-app {
+    font-size: 12px;
+    color: #0990a0;
+    padding: 5px 0;
+    margin: 0;
+}
+.card-header .title-app > select {
+    border: none;
+    border-bottom: 2px solid red;
+    border-radius: 0;
+    padding: 0 0 3px 0;
+    background: #e6f3f7;
+    font-size: 13px;
+    width: 60%;
+}
+.card-header .action {
+    font-size: 15px;
+    color: #0990a0;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.card-header .app-date {
+    right: 10px;
+    text-align: right;
+    font-size: 10px;
+    top: -17px;
+    border-radius: 5px 5px 0 0px;
+    opacity: 1;
+    padding: 0px 10px 0px 10px;
+    background: #e6f3f7;
+    border-top: 1px solid #0eadbe;
+    border-left: 1px solid #0eadbe;
+    border-right: 1px solid #0eadbe;
+    color: #148b94;
+}
+
+.card-body .country {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 3px !important;
+}
+.card-body .country::-webkit-scrollbar {
+    height: 3px;
+    border-radius: 50%;
+}
+.card-body .country::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fdfdfd;
+}
+.card-body .country::-webkit-scrollbar-thumb {
+    background-color: #00343a;
+}
+.card-body .country > div {
+    height: min-content;
+}
+.card-body .country .first {
+    background: #ffc7cf;
+    padding: 0 0 0 10px;
+}
+.card-body .country .first .arrow-left {
+    border: 11.5px solid transparent;
+    border-left-color: #ffc7cf;
+    border-right: 0;
+    top: 0px;
+    right: -11.5px;
+    z-index: 100;
+}
+.card-body .country .last {
+    background: #7ec4a2;
+    padding: 0 0 0 20px;
+}
+.card-body .country .last > .arrow-left {
+    border: 11.5px solid transparent;
+    border-left-color: #e5f3f7;
+    border-right: 0;
+    top: 0px;
+    left: 0;
+}
+.card-body .country .last > .arrow-right {
+    border: 11.5px solid transparent;
+    border-left-color: #7ec4a2;
+    border-right: 0;
+    top: 0px;
+    right: -11.05px;
+    z-index: 100;
+}
+.card-body .country .middle {
+    background: rgb(255, 231, 150);
+    padding: 0 0 0 20px;
+}
+.card-body .country .middle > .arrow-left {
+    border: 11.5px solid transparent;
+    border-left-color: #e5f3f7;
+    border-right: 0;
+    top: 0px;
+    left: 0;
+}
+.card-body .country .middle > .arrow-right {
+    border: 11.5px solid transparent;
+    border-left-color: rgb(255, 231, 150);
+    border-right: 0;
+    top: 0px;
+    right: -11.05px;
+    z-index: 100;
+}
+
+.card-body .description .h6 small, .card-body .short-description .h6 small {
+    font-weight: bold;
+}
+.card-body .short-description .price {
+    font-size: 13px;
+    margin-left: 5px;
+    color: red;
+}
+.f-11 {
+    font-size: 12px;
+}

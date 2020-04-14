@@ -1,0 +1,100 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "dependencies": {
+        "autobahn": "^18.10.2",
+        "emoji-vue": "^0.2.4",
+        "fuse.js": "^3.4.4",
+        "js-cookie": "^2.2.0",
+        "laravel-echo": "^1.5.3",
+        "material-design-icons-iconfont": "^4.0.4",
+        "pusher-js": "^4.4.0",
+        "rxjs": "^6.4.0",
+        "rxjs-compat": "^6.4.0",
+        "scrollmagic": "^2.0.6",
+        "thruway.js": "^2.0.0-beta7",
+        "vue": "^2.6.10",
+        "vue-avatar": "^2.1.7",
+        "vue-chat-scroll": "^1.3.5",
+        "vue-color": "^2.7.0",
+        "vue-grid-layout": "^2.3.4",
+        "vue-loader": "^15.7.0",
+        "vue-observe-visibility": "^0.4.3",
+        "vue-resource": "^1.5.1",
+        "vue-router": "^3.0.2",
+        "vue-router-middleware": "^0.2.1",
+        "vue-scrollto": "^2.15.0",
+        "vue-scrollview": "^3.0.1",
+        "vue-slider-component": "^3.0.31",
+        "vue-text-highlight": "^2.0.2",
+        "vue-timeago": "^5.1.2",
+        "vue-wamp": "^2.0.5",
+        "vue-websocket": "^0.2.3",
+        "vue-yandex-maps": "^0.8.4",
+        "vue2-editor": "^2.6.6",
+        "vuedraggable": "^2.21.0",
+        "vuejs-datepicker": "^1.5.4",
+        "vuetify": "^1.3.0",
+        "vuetify-upload-button": "^1.2.2",
+        "vuex": "^3.1.0",
+        "webrtc-adapter": "^7.2.3",
+        "ws": "^6.2.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.4.0",
+        "@vue/cli-plugin-eslint": "^3.4.0",
+        "@vue/cli-service": "^3.4.0",
+        "axios": "^0.18",
+        "babel-eslint": "^10.0.1",
+        "bootstrap": "^4.0.0",
+        "cross-env": "^5.1",
+        "eslint": "^5.8.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^4.0.7",
+        "lodash": "^4.17.5",
+        "popper.js": "^1.12",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.16.1",
+        "sass-loader": "^7.1.0",
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.1",
+        "vue": "^2.5.17",
+        "vue-cli-plugin-vuetify": "^0.4.6",
+        "vue-template-compiler": "^2.6.10",
+        "vuetify-loader": "^1.0.5",
+        "webpack-cli": "^3.2.1"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}
